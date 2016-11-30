@@ -13,6 +13,7 @@ var rmApp = rmApp || {};
             onClick: () => {
                     $('#nav-burger').click(function(){
                         $(this).toggleClass('open');
+                        $('.full-nav').toggleClass('nav-open');
                         if ($(this).hasClass('open')){
                             $('#nav-burger p').text('close');
                         }else{

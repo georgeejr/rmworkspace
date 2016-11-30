@@ -1,11 +1,18 @@
 
-.full-nav{
+.full-nav{ 
     position: absolute; 
     left: 0;
     right: 0;
     top:0;
     height: 100%;
     background: rgba(16, 25, 34, 0.9);
+    transform:translate(9999px);
+    opacity: 0;
+    &.nav-open{ 
+        transition: opacity .5s linear;
+        transform:translate(0);
+        opacity: 1;
+    }
     .row{
         margin:0 auto;
     }
