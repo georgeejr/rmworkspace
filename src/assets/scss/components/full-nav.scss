@@ -8,8 +8,9 @@
     background: rgba(16, 25, 34, 0.9);
     transform:translate(9999px);
     opacity: 0;
+    z-index: 1;
     &.nav-open{ 
-        transition: opacity .5s linear;
+        transition: opacity .5s ease-in-out;
         transform:translate(0);
         opacity: 1;
     }

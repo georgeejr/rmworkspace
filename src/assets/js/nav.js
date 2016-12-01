@@ -7,10 +7,10 @@ var rmApp = rmApp || {};
 (function($){
     'use strict';
       var navBurger = {
-            init: function(){
+            init: () =>{
                     navBurger.onClick();
             }, 
-            onClick: () => {
+            onClick: () =>{
                     $('#nav-burger').click(function(){
                         $(this).toggleClass('open');
                         $('.full-nav').toggleClass('nav-open');
